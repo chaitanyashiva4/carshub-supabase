@@ -19,7 +19,6 @@ const getCarsByFilters = async (fuel: string, year: number): Promise<Car[]> => {
     if(error){
         console.log("error=========>",error)
     }
-console.log("data======>",data)
     return (data as any) || [];
 
 }

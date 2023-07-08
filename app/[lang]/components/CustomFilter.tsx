@@ -31,7 +31,7 @@ const CustomFilter = ({ title, options }: CustomFilterProps) => {
           <Listbox.Button className="custom-filter__btn">
             <span>{selected.title}</span>
             <Image
-              src="/chevron-up-down.svg"
+              src="https://cars-hub-nextjs.vercel.app/chevron-up-down.svg"
               width={20}
               height={20}
               className='ml-4 object-contain'

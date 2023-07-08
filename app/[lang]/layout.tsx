@@ -1,6 +1,6 @@
-import { Navbar } from '@/components'
-import './globals.css'
-import Footer from '@/components/Footer'
+import { Navbar } from './components'
+import './global.css'
+import Footer from './components/Footer'
 import SupabaseProvider from '@/providers/SupabaseProvider'
 
 export const metadata = {

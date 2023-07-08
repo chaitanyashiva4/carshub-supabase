@@ -11,7 +11,7 @@ const getCarsBySearch = async (model: string, make: string): Promise<Car[]> => {
     })
 
 
-    console.log(`Model:${model} Make:${make}`)
+  
 
    
 
@@ -24,7 +24,6 @@ const getCarsBySearch = async (model: string, make: string): Promise<Car[]> => {
     if(error){
         console.log("error=========>",error)
     }
-console.log("data======>",data)
     return (data as any) || [];
 
 }

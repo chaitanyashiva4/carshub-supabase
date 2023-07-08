@@ -27,7 +27,7 @@ const SearchManufacturer = ({ manufacturer, setManuFacturer }: SearchManuFacture
         <div className='relative w-full'>
           <Combobox.Button className='absolute top-[14px]'>
             <Image
-              src='/car-logo.svg'
+              src='https://cars-hub-nextjs.vercel.app/car-logo.svg'
               width={20}
               height={20}
               className='ml-4'

@@ -1,5 +1,6 @@
 import Stripe from 'stripe';
 import { MouseEventHandler } from "react"
+import { Locale } from '@/i18n-config';
 
 export interface Car {
   id: string;
@@ -46,7 +47,21 @@ export interface CarCardProps {
   drive: string;
   cityMPG: number;
 }
+export interface Home {
+  header: string;
+  headerDes: string;
+  title: string;
+  subtitle: string;
+  buttontext: string;
+};
 
+export interface HeroProps {
+  title:string;
+  subtitle:string;
+  buttontext:string;
+  lang:Locale;
+  dictionary:{Home:Home};
+}
 
 export interface HomeProps {
   searchParams: FilterProps;

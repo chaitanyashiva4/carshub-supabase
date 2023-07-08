@@ -7,7 +7,7 @@ import SearchManufacturer from "./SearchManufacturer";
 const SearchButton = ({ otherClasses }: { otherClasses: string }) => (
   <button type="submit" className={`-ml-3 z-10 ${otherClasses}`}>
     <Image
-      src="/magnifying-glass.svg"
+      src="https://cars-hub-nextjs.vercel.app/magnifying-glass.svg"
       alt="Magnifying Glass"
       width={40}
       height={40}

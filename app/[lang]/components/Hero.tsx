@@ -1,9 +1,11 @@
-"use client"
+'use client'
 
+import { HeroProps } from '@/types';
 import Image from 'next/image'
 import CustomButton from './CustomButton';
+import { getDictionary } from '@/get-dictionary';
 
-const Hero = () => {
+const  Hero = async({title,subtitle,buttontext,lang,dictionary}:HeroProps) => {
     const handleScrole = () => {
 
     }
@@ -12,13 +14,13 @@ const Hero = () => {
         <div className="hero">
             <div className="flex-1 pt-36 padding-x">
                 <h1 className='hero__title'>
-                    Find, book or rent a car --quickly and easily!
+                {dictionary['Home'].title}
                 </h1>
                 <p className='hero__subtitle'>
-                    Streamline your car rental experience with our effortless booking process.
+                {dictionary['Home'].subtitle}
                 </p>
                 <CustomButton
-                    title="Explore Cars"
+                    title={dictionary['Home'].buttontext}
                     containerStyles="bg-primary-blue text-white rounded-full mt-10"
                     handleClick={handleScrole}
                 />
